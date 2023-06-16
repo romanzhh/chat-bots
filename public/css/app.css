@@ -1,308 +1,360 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-h2{
+
+h2 {
   padding: 100px 0 100px 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 42px;
 }
-.open{
-  display: flex;
 
+.open {
+  display: flex;
 }
-.header_row a{
+
+.header_row a {
   text-decoration: none;
   color: black;
   margin-left: 5vw;
 }
-.header_row a:hover{
+
+.header_row a:hover {
   color: red;
 }
-.contact-button a:hover{
-  border: 1px solid #e60026,;
+
+.contact-button a:hover {
+  border: 1px solid #e60026;
   border-radius: 5px;
   padding: 12px 40px;
 }
-.header_row{
+
+.header_row {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 20px 0 40px 0;
   white-space: nowrap;
   background: #FAFAFA;
 }
-.contact-button a{
+
+.contact-button a {
   border: 1.6px solid red;
   border-radius: 5px;
   padding: 12px 40px;
 }
-.logo img{
+
+.logo img {
   width: 60px;
 }
-.content_container{
+
+.content_container {
   padding: 0 15vw;
-  background: #FAFAFA
+  background: #FAFAFA;
 }
-.main_baner_row{
+
+.main_baner_row {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-.image_content img{
+
+.image_content img {
   width: 500px;
   margin-left: 40px;
 }
-.text_content h1{
+
+.text_content h1 {
   margin-bottom: 25px;
 }
-.text_content{
+
+.text_content {
   max-width: 500px;
   margin-right: 25px;
 }
-.text_content p{
+
+.text_content p {
   line-height: 25px;
   padding: 25px 0;
 }
-.order_button_link{
- color: white;
- text-decoration: none;
+
+.order_button_link {
+  color: white;
+  text-decoration: none;
 }
-.order_button_link:hover{
+
+.order_button_link:hover {
   font-weight: bold;
   text-decoration: none;
- }
-.order_button{
-  background-image: linear-gradient(to right, #e60026, #ec0027, #e80027, #d90024);  box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+.order_button {
+  background-image: linear-gradient(to right, #e60026, #ec0027, #e80027, #d90024);
+  box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
   width: 250px;
   text-align: center;
   padding: 10px 40px;
   border-radius: 8px;
   margin-top: 25px;
-  
 }
-.order_button a{
+
+.order_button a {
   color: white;
   text-decoration: none;
   width: 100%;
 }
-.benefits h2{
+
+.benefits h2 {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-.benefits_row{
+
+.benefits_row {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
-.benefits_item_row{
+
+.benefits_item_row {
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   color: #e41e00;
 }
-.benefits_item{
+
+.benefits_item {
   width: 200px;
   background: #F7F7F7;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
   margin-right: 45px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 30px 40px;
 }
-.benefits_img img{
+
+.benefits_img img {
   width: 50px;
   margin-right: 15px;
 }
-.benefits_of_bots_text{
+
+.benefits_of_bots_text {
   margin: 0 25px;
 }
-.number{
-  background-color: #e41e00;;
+
+.number {
+  background-color: #e41e00;
   color: white;
   padding: 8px;
   margin-right: 10px;
   margin-bottom: 10px;
   border-radius: 3px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-hr{
+
+hr {
   margin: 20px 0;
 }
-.examples_item{
+
+.examples_item {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background: #F7F7F7;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
   margin-bottom: 55px;
   padding: 10px 10px;
 }
+
 .examples_item:nth-child(2n) {
   flex-direction: row;
 }
-.examples_item_text{
+
+.examples_item_text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 60px;
 }
-.examples_item_img img{
+
+.examples_item_img img {
   width: 25vw;
 }
-.benefits_of_bots_item{
+
+.benefits_of_bots_item {
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   align-items: center;
   margin-bottom: 35px;
 }
+
 .benefits_of_bots_item:nth-child(2n) {
   flex-direction: row;
 }
-.flex{
+
+.flex {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
-li{
+
+li {
   padding-bottom: 5px;
 }
-.new_employee{
-  font-family: 'Roboto', sans-serif;
+
+.new_employee {
+  font-family: "Roboto", sans-serif;
 }
-.new_employee_row{
+
+.new_employee_row {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.new_employee_img{
+
+.new_employee_img {
   margin-right: 50px;
 }
-.new_employee_img img{
+
+.new_employee_img img {
   width: 400px;
 }
-.new_employee_text{
+
+.new_employee_text {
   line-height: 25px;
   max-width: 500px;
 }
-.contacts{
+
+.contacts {
   padding-bottom: 50px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-.contacts a{
+
+.contacts a {
   color: black;
   text-decoration: none;
 }
-.contacts_flex{
+
+.contacts_flex {
   display: flex;
   justify-content: center;
 }
-.contacts_item{
+
+.contacts_item {
   margin-right: 40px;
   background: #F7F7F7;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
   padding: 35px;
 }
-.header_row_mobile{
+
+.header_row_mobile {
   display: none;
 }
-.mobile_row{
+
+.mobile_row {
   display: none;
 }
-.contact_img img{
+
+.contact_img img {
   width: 40px;
   margin-right: 5px;
 }
-.contacts_item p{
+
+.contacts_item p {
   color: red;
   font-weight: bold;
 }
-.contacts_item a{
+
+.contacts_item a {
   color: red;
   font-weight: bold;
 }
-@keyframes burgerAnimation{
-  from{opacity: 0;}
-  to{opacity: 2;}
+
+@keyframes burgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 2;
+  }
 }
-@media only screen and (min-width : 480px) and (max-width : 1023px) {
-  .logo img{
+@media only screen and (min-width: 480px) and (max-width: 1023px) {
+  .logo img {
     margin-bottom: 20px;
   }
-  .phone_number{
+  .phone_number {
     display: none;
   }
-  .header_row{
+  .header_row {
     flex-direction: column;
   }
   .contact-button {
     margin: 70px 0 40px 0;
   }
-  .text_content{
+  .text_content {
     text-align: center;
   }
-  h1{
+  h1 {
     margin-top: 60px;
   }
-  .order_button{
+  .order_button {
     margin: 1px auto;
   }
-  .main_baner_row{
+  .main_baner_row {
     flex-wrap: wrap-reverse;
   }
-  .benefits_item{
+  .benefits_item {
     width: 40vw;
     margin-bottom: 30px;
   }
-  .new_employee_row{
+  .new_employee_row {
     flex-wrap: wrap;
   }
-  .new_employee_text{
+  .new_employee_text {
     margin-top: 30px;
   }
-  .benefits_bots_img img{
+  .benefits_bots_img img {
     width: 40vw;
   }
-  .benefits_of_bots_text{
+  .benefits_of_bots_text {
     width: 40vw;
   }
-  .flex{
+  .flex {
     width: 40vw;
   }
 }
-@media only screen and (min-width : 320px) and (max-width : 479px) {
-  .mobile_row{
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .mobile_row {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100vw;
     padding: 5px 0;
   }
-  .logo_mobile img{
+  .logo_mobile img {
     width: 100px;
   }
-  .mobile_phone{
-    font-family: 'Roboto', sans-serif;
+  .mobile_phone {
+    font-family: "Roboto", sans-serif;
   }
-  .mobile_phone a{
+  .mobile_phone a {
     text-decoration: none;
     color: black;
     font-weight: bold;
   }
-  .header_row{
+  .header_row {
     display: none;
     flex-direction: column;
     position: fixed;
@@ -317,92 +369,90 @@ li{
     animation: burgerAnimation 0.9s;
     color: wheat;
   }
-  .logo img{
+  .logo img {
     margin: 50px;
   }
-  .nav a{
+  .nav a {
     padding: 20px;
   }
   .contact-button {
     margin: 50px;
   }
- .burger{
-  display: flex;
- }
-  .logo-mobile img{
+  .burger {
+    display: flex;
+  }
+  .logo-mobile img {
     width: 30px;
   }
-.content_container{
-  padding: 0 20px;
-  
-}
-.navigation nav{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-/* .header_row{
-  display: none;
-} */
-.image_content{
-  margin-bottom: 25px;
-}
-.image_content img{
-  width: 90vw;
-  margin: 0;
-}
-.examples_item_img img{
-  width: 90vw;
-  margin-bottom: 25px;
-}
-.benefits_bots_img img{
-  width: 90vw;
-  margin-bottom: 25px;
-}
-.new_employee_img{
-  margin: 0;
-}
-.new_employee_img img{
-  width: 90vw;
-  margin-bottom: 25px;
-}
-.main_baner_row{
-  flex-direction: column-reverse;
-}
-h1{
-  text-align: center;
-}
-.text_content p{
-  margin-bottom: 25px;
-}
-.order_button{
-  margin: 1px auto;
-}
-h2{
-  padding: 50px 0;
-}
-.benefits_item{
-  margin-bottom: 20px;
-  margin-right: 0;
-}
-.examples_item_text{
-  margin: 0;
-}
-.new_employee_row{
-  flex-wrap: wrap;
-}
-.main_baner_row{
-  flex-wrap: wrap;
-}
-.benefits_of_bots_item{
-  flex-wrap: wrap;
-}
-.contacts_flex{
-  flex-wrap: wrap;
-}
-.contacts_item{
-  margin: 0 5px 30px 0;
-  padding: 35px;
-}
+  .content_container {
+    padding: 0 20px;
+  }
+  .navigation nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* .header_row{
+    display: none;
+  } */
+  .image_content {
+    margin-bottom: 25px;
+  }
+  .image_content img {
+    width: 90vw;
+    margin: 0;
+  }
+  .examples_item_img img {
+    width: 90vw;
+    margin-bottom: 25px;
+  }
+  .benefits_bots_img img {
+    width: 90vw;
+    margin-bottom: 25px;
+  }
+  .new_employee_img {
+    margin: 0;
+  }
+  .new_employee_img img {
+    width: 90vw;
+    margin-bottom: 25px;
+  }
+  .main_baner_row {
+    flex-direction: column-reverse;
+  }
+  h1 {
+    text-align: center;
+  }
+  .text_content p {
+    margin-bottom: 25px;
+  }
+  .order_button {
+    margin: 1px auto;
+  }
+  h2 {
+    padding: 50px 0;
+  }
+  .benefits_item {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .examples_item_text {
+    margin: 0;
+  }
+  .new_employee_row {
+    flex-wrap: wrap;
+  }
+  .main_baner_row {
+    flex-wrap: wrap;
+  }
+  .benefits_of_bots_item {
+    flex-wrap: wrap;
+  }
+  .contacts_flex {
+    flex-wrap: wrap;
+  }
+  .contacts_item {
+    margin: 0 5px 30px 0;
+    padding: 35px;
+  }
 }
