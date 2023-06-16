@@ -7,6 +7,7 @@
     <meta name="description" content="Чат боты для работы. Заказать профессиональный чат бот для бизнеса от программистов с опытом работы 15 лет. Разработка в индивидуальном порядке под каждого клиента. ">
     <link rel="stylesheet" href="css/app.css">
     <link rel="shortcut icon" href="fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -32,8 +33,9 @@
         });
     </script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11221357530">
-    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11221357530"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -91,11 +93,68 @@
                     <p>Мы предлагаем разработку чат-ботов на заказ, которые помогут Вам сократить время и затраты на обслуживание
                         клиентов,
                         улучшить уровень сервиса и повысить удовлетворенность клиентов.</p>
-                    <a class="order_button_link" href="#contacts">
-                        <div class="order_button">
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#form">
                             Заказать
+                        </button>
+                    </div>
+
+                    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form class="row g-3 needs-validation" onsubmit="return false;" novalidate>
+                                        <div class="col-md-4">
+                                            <label for="validationServer01" class="form-label">First name</label>
+                                            <input type="text" class="form-control" id="validationServer01" required>
+                                            <div class="valid-feedback">
+                                                Looks good!
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="validationServer03" class="form-label">City</label>
+                                            <input type="text" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+                                            <div id="validationServer03Feedback" class="invalid-feedback">
+                                                Please provide a valid city.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="validationServer04" class="form-label">State</label>
+                                            <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                                                <option selected disabled value="">Choose...</option>
+                                                <option>...</option>
+                                            </select>
+                                            <div id="validationServer04Feedback" class="invalid-feedback">
+                                                Please select a valid state.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="validationServer05" class="form-label">Zip</label>
+                                            <input type="text" class="form-control" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+                                            <div id="validationServer05Feedback" class="invalid-feedback">
+                                                Please provide a valid zip.
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+                                                <label class="form-check-label" for="invalidCheck3">
+                                                    Agree to terms and conditions
+                                                </label>
+                                                <div id="invalidCheck3Feedback" class="invalid-feedback">
+                                                    You must agree before submitting.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary" onclick="submitForm()" type="submit">Submit form</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                    </a>
+                    </div>
+
                 </div>
                 <div class="image_content">
                     <img src="images/main.png" alt="Чат бот здоровается">
@@ -306,6 +365,29 @@
             </div>
         </div>
     </div>
+
+    <script>
+        (() => {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+
+        function submitForm() {}
+    </script>
 </body>
 
 </html>
