@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Заказать чат бота в Минске | Разработка чат ботов телеграмм от профессионалов на заказ</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="Чат боты для работы. Заказать профессиональный чат бот для бизнеса от программистов с опытом работы 15 лет. Разработка в индивидуальном порядке под каждого клиента. ">
     <link rel="stylesheet" href="css/app.css">
     <link rel="shortcut icon" href="fav.png">
@@ -36,6 +37,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11221357530"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -94,62 +96,63 @@
                         клиентов,
                         улучшить уровень сервиса и повысить удовлетворенность клиентов.</p>
                     <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#form">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#formModal">
                             Заказать
                         </button>
                     </div>
 
-                    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                                 <div class="modal-body">
-                                    <form class="row g-3 needs-validation" onsubmit="return false;" novalidate>
-                                        <div class="col-md-4">
-                                            <label for="validationServer01" class="form-label">First name</label>
-                                            <input type="text" class="form-control" id="validationServer01" required>
-                                            <div class="valid-feedback">
-                                                Looks good!
+                                    <form name="mainForm" class="needs-validation" onsubmit="return false;" novalidate>
+                                        @csrf
+                                        <div class="mt-3">
+                                            <label for="name" class="form-label">Имя</label>
+                                            <input type="text" class="form-control" name="name" id="name" required>
+                                            <div class="invalid-feedback">
+                                                Введите ваше имя
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <label for="validationServer03" class="form-label">City</label>
-                                            <input type="text" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-                                            <div id="validationServer03Feedback" class="invalid-feedback">
-                                                Please provide a valid city.
+                                        <div class="mt-3">
+                                            <label for="email" class="form-label">Почта</label>
+                                            <input type="text" class="form-control" name="email" id="email" required>
+                                            <div id="emailFeedback" class="invalid-feedback">
+                                                Введите вашу почту
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
-                                            <label for="validationServer04" class="form-label">State</label>
-                                            <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-                                                <option selected disabled value="">Choose...</option>
-                                                <option>...</option>
-                                            </select>
-                                            <div id="validationServer04Feedback" class="invalid-feedback">
-                                                Please select a valid state.
+                                        <div class="mt-3">
+                                            <label for="phone" class="form-label">Телефон</label>
+                                            <input type="text" class="form-control" name="phone" id="phone" aria-describedby="phoneFeedback" required>
+                                            <div id="phoneFeedback" class="invalid-feedback">
+                                                Введите ваш номер
                                             </div>
                                         </div>
-                                        <div class="col-md-3">
-                                            <label for="validationServer05" class="form-label">Zip</label>
-                                            <input type="text" class="form-control" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-                                            <div id="validationServer05Feedback" class="invalid-feedback">
-                                                Please provide a valid zip.
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
+                                        <div class="mt-3">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
                                                 <label class="form-check-label" for="invalidCheck3">
-                                                    Agree to terms and conditions
+                                                    Согласен с правилами
                                                 </label>
                                                 <div id="invalidCheck3Feedback" class="invalid-feedback">
-                                                    You must agree before submitting.
+                                                    Вы должны согласиться перед подтверждением.
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12">
-                                            <button class="btn btn-primary" onclick="submitForm()" type="submit">Submit form</button>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <button class="btn btn-primary w-100" onclick="submitForm()" type="submit">Оставить заявку</button>
                                         </div>
                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+
                                 </div>
                             </div>
                         </div>
@@ -370,23 +373,41 @@
         (() => {
             'use strict'
 
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
+            const form = document.querySelector('.needs-validation')
 
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
 
-                    form.classList.add('was-validated')
-                }, false)
-            })
+                form.classList.add('was-validated')
+            }, false)
+
         })()
 
-        function submitForm() {}
+        function submitForm() {
+            const form = document.mainForm
+            if (form.checkValidity()) {
+                fetch('/createRequest', {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    body: new FormData(form)
+                }).then(() => {
+                    $('#formModal').modal('hide')
+                    $('#successModal').modal('show')
+                })
+            }
+        }
+
+        const formModal = document.querySelector('#formModal')
+        formModal.addEventListener('hidden.bs.modal', event => {
+            const form = document.querySelector('.needs-validation')
+
+            form.classList.remove('was-validated')
+        })
     </script>
 </body>
 
