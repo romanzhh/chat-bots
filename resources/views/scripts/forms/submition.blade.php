@@ -21,4 +21,8 @@
 
     form.classList.remove('was-validated')
   })
+
+  formModal.addEventListener('shown.bs.modal', () => {
+    document.body.style.overflow = 'visible';
+  })
 </script>
