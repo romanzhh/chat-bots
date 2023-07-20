@@ -1,7 +1,7 @@
 <form name="mainForm" class="needs-validation" onsubmit="return false;" novalidate>
   @csrf
   <div class="d-flex justify-content-center align-items-center mb-4">
-    <img src="images/robot.png" width="64" class="border border-light rounded-circle">
+    <img src="images/cb-logo.png" width="64" class="border border-light rounded-circle">
   </div>
   <div class="d-flex justify-content-center mt-3">
     <input type="text" class="w-90 form-control fs-18" name="name" id="name" placeholder="Имя" required>
