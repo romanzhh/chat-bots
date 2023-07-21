@@ -181,7 +181,7 @@ hr {
   font-family: "Inter", sans-serif;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
   border-radius: 10px;
-  margin-bottom: 55px;
+  margin: 0 50px 55px;
   padding: 10px 10px;
 }
 
@@ -375,24 +375,32 @@ li {
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .mobile_row {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
+    position: fixed;
+    left: 0;
     width: 100vw;
-    padding: 5px 0;
+    height: 3rem;
   }
 
-  .logo_mobile img {
-    width: 400px;
+  .main_child {
+    margin-top: 250 !important;
   }
 
-  .mobile_phone {
-    font-family: "Inter", sans-serif;
+  .body {
+    margin: 0 2rem !important;
   }
 
+  .mobile_logo a,
   .mobile_phone a {
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    color: white;
+  }
+
+  .mobile_logo a:hover,
+  .mobile_phone a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
   }
 
   .header_row {
@@ -432,25 +440,43 @@ li {
   }
 
   .img {
-    width: 90vw!important;
+    width: 90vw !important;
   }
 
   .main {
     flex-direction: column;
-    margin-left: 0!important;
-    margin-right: 0!important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .main_child {
-    margin-left: 0!important;
+    margin-left: 0 !important;
   }
 
   .main:first-child:first-child {
-    margin-right: 0!important;
+    margin-right: 0 !important;
   }
 
   .baner_text {
-    width: 100%!important;
+    width: 100% !important;
+  }
+
+  .baner_text p {
+    font-size: 20px !important;
+  }
+
+  .modal-content {
+    width: 90% !important;
+    margin-left: 4.5% !important;
+  }
+
+  .benefits h2 {
+    margin-top: 10rem !important;
+  }
+
+  .new_employee h2 {
+    margin-top: 5rem !important;
+    margin-bottom: 1rem !important;
   }
 
   .content_container {
@@ -473,6 +499,15 @@ li {
   .image_content img {
     width: 90vw;
     margin: 0;
+  }
+
+  .examples {
+    margin: 2rem !important;
+  }
+
+  .examples_item {
+    margin-left: -2.3rem !important;
+    margin-right: -2.3rem !important;
   }
 
   .examples_item_img img {
@@ -506,7 +541,16 @@ li {
   }
 
   h2 {
-    padding: 50px 0;
+    padding: 2rem 0;
+    font-size: 22px !important;
+  }
+
+  h3 {
+    font-size: 20px !important;
+  }
+
+  .benefits {
+    margin-top: 5rem !important;
   }
 
   .benefits_item {
@@ -517,11 +561,15 @@ li {
 
   .benefits_bots_img img {
     width: 90vw;
-    margin-bottom: 25px;
+  }
+
+  .examples_item_img img {
+    width: 70vw;
   }
 
   .examples_item_text {
     margin: 0;
+    margin-top: 15px !important;
   }
 
   .new_employee_row {

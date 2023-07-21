@@ -1,4 +1,4 @@
-<div class="examples mx-5">
+<div class="examples" style="margin-left: 3rem;margin-right: 3rem">
   <a name="examples"></a>
   <h2 class="mt-5">Примеры чат ботов</h2>
   <div class="examples_item">

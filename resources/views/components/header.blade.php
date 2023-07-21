@@ -12,9 +12,12 @@
       <a href="" data-bs-toggle="modal" data-bs-target="#formModal">Связаться с нами</a>
     </div>
   </div>
-  <div class="mobile_row">
-    <div class="mobile_phone">
-      <a href="tel:+375 29 747 6987">+375 29 <span style="color:red">747 69 87</span></a>
+  <div class="mobile_row bg-danger">
+    <div class="mobile_logo ps-3">
+      <a href="/">chat-bots.by</a>
+    </div>
+    <div class="mobile_phone pe-3">
+      <a href="tel:+375 29 747 6987">+375 29 747 69 87</a>
     </div>
   </div>
 </div>
