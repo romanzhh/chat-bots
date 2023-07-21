@@ -27,11 +27,18 @@ class Telegram extends Model
     public function makeNotification(array $data)
     {
         $url = $this->initUrl() . '/sendMessage';
-        $postData['text'] = $data;
+        $text = $this->prepareData($data);
+        $postData['text'] = $text;
         foreach ($this->botOwners as $botOwner) {
             $postData['chat_id'] = $botOwner;
             $this->sendCurlRequest($url, $postData);
         }
+    }
+
+    protected function prepareData(array $data): string
+    {
+        $text = "Новая заявка:\n\n{$data['name']}\n{$data['phone']}\n{$data['email']}" ;
+        return $text;
     }
 
     protected function sendCurlRequest(string $url, array $postData)
