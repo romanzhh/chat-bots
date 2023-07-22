@@ -322,16 +322,13 @@ li {
     display: none;
   }
 
-  .header_row {
-    flex-direction: column;
-  }
-
-  .contact-button {
-    margin: 70px 0 40px 0;
-  }
-
   .text_content {
     text-align: center;
+  }
+
+  .modal-content {
+    width: 95% !important;
+    margin-left: 4.5% !important;
   }
 
   h1 {
@@ -342,12 +339,31 @@ li {
     margin: 1px auto;
   }
 
+  .main {
+    height: auto !important;
+    margin: 30px 0 0 !important;
+    flex-direction: column !important;
+  }
+
+  .main_child {
+    margin-top: 100px !important;
+  }
+
+  .img {
+    width: 80% !important;
+    margin-left: 6rem !important;
+  }
+
+  .baner_text {
+    width: 90% !important;
+  }
+
   .main_baner_row {
     flex-wrap: wrap-reverse;
   }
 
   .benefits_item {
-    width: 40vw;
+    width: 60vw;
     margin-bottom: 30px;
   }
 
@@ -380,7 +396,7 @@ li {
     position: fixed;
     left: 0;
     width: 100vw;
-    height: 3rem;
+    height: 45px;
   }
 
   .main_child {
@@ -444,9 +460,9 @@ li {
   }
 
   .main {
+    height: auto !important;
     flex-direction: column;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin: -170px 0 0 !important;
   }
 
   .main_child {
@@ -471,7 +487,7 @@ li {
   }
 
   .benefits h2 {
-    margin-top: 10rem !important;
+    margin-top: 0 !important;
   }
 
   .new_employee h2 {
