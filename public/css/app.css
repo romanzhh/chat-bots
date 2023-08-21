@@ -517,9 +517,9 @@ li {
     margin: 0;
   }
 
-  .examples {
+  /* .examples {
     margin: 2rem !important;
-  }
+  } */
 
   .examples_item {
     margin-left: -2.3rem !important;

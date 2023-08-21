@@ -1,5 +1,8 @@
 <div>
-  <div class="header_row bg-danger">
+  <div class="header_row bg-danger" style="z-index: 999">
+    <div class="logo">
+      <img src="images/logo.png">
+    </div>
     <div class="navigation">
       <nav class="nav">
         <a href="#main">Главная</a>
@@ -12,8 +15,9 @@
       <a href="" data-bs-toggle="modal" data-bs-target="#formModal">Связаться с нами</a>
     </div>
   </div>
-  <div class="mobile_row bg-danger">
+  <div class="mobile_row bg-danger" style="z-index: 999">
     <div class="mobile_logo ps-3">
+      <img src="images/logo.png" style="width: 30px">
       <a href="/">chat-bots.by</a>
     </div>
     <div class="mobile_phone pe-3">

@@ -1,6 +1,6 @@
 <div class="benefits">
   <a name="why"></a>
-  <h2 class="mt-5">Преимущества заказа чат-ботов у нас</h2>
+  <h2 class="mt-5">Преимущества заказа разработки чат-ботов у нас</h2>
   <div class="benefits_row">
     <div class="benefits_item">
       <div class="benefits_item_row">
@@ -9,8 +9,7 @@
       <hr>
       <div>
         <span class="fs-18 fw-normal mt-4 d-block">
-          Мы создаём чат ботов вручную, а не на конструкторе, что позволяет сделать их более гибкими в использовании и
-          индивидуальными.
+          Никаких шаблонов, боты разрабатываются вручную, с учетом запроса и ключевых задач бизнеса.
         </span>
         <hr>
         <div class="d-flex justify-content-center align-items-center mt-4">
@@ -25,8 +24,7 @@
       <hr>
       <div>
         <span class="fs-18 fw-normal mt-4 d-block">
-          Мы 15 лет в разработке чат ботов, что позволяет вам быть уверенными в том, что получите качественный продукт
-          от специалистов с большим опытом.
+          Ошибки исключены. Многолетний опыт позволяет нам создавать продукты, отличающиеся высоким качеством.
         </span>
         <hr>
         <div class="d-flex justify-content-center align-items-center mt-4">
@@ -41,9 +39,9 @@
       <hr>
       <div>
         <span class="fs-18 fw-normal mt-4 d-block">
-          У каждой компании, с которой мы работаем, своё уникальное видение чат бота. Мы ко всем найдём подход к и
-          разработаем то, что нужно конкретно вам.
+          Для каждого бизнеса подбирается решение, которое будет действительно эффективно.
         </span>
+        <br>
         <hr>
         <div class="d-flex justify-content-center align-items-center mt-4">
           <img src="images/person.png" width="52">
@@ -51,4 +49,5 @@
       </div>
     </div>
   </div>
+
 </div>

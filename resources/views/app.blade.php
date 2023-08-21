@@ -1,12 +1,12 @@
 <html lang="ru">
 
 <head>
-  <title>Заказать чат бота в Минске | Разработка чат ботов телеграмм от профессионалов на заказ</title>
+  <title>Разработка чат-ботов в индивидуальном порядке | Заказать чат-бот для бизнеса</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <meta name="description" content="Чат боты для работы. Заказать профессиональный чат бот для бизнеса от программистов с опытом работы 15 лет. Разработка в индивидуальном порядке под каждого клиента. ">
+  <meta name="description" content="Предлагаем качесвенную разработку чат-бота для вашего бизнеса. Создаем ботов в индивдуальном порядке под каждого клиента не на конструкторе с персональным сохранением данных.">
 
   <link rel="stylesheet" href="css/app.css">
   <link rel="shortcut icon" href="images/fav.png">

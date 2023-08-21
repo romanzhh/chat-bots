@@ -1,4 +1,43 @@
 <a name="contacts"></a>
+<div class="contacts">
+  <h2>Контакты для связи</h2>
+  <a name="contacts"></a>
+  <div class="contacts_flex" style="padding-bottom: 50px;">
+    <div class="contacts_item">
+      <div class="flex">
+        <div class="contact_img"><img src="images/mail.png" alt="Email"></div>
+        <div>Email:</div>
+      </div>
+      <hr>
+      <p>botsforchats@mail.ru</p>
+    </div>
+    <div class="contacts_item">
+      <div class="flex">
+        <div class="contact_img"><img src="images/phone.png" alt="Телефон"></div>
+        <div>Телефон:</div>
+      </div>
+      <hr>
+      <a href="tel:+375 29 747 6987" style="color: black">+375 29 747 6987</a>
+    </div>
+    <div class="contacts_item">
+      <div class="flex">
+        <div class="contact_img"><img src="images/location.png" alt="Адрес"></div>
+        <div>Адрес:</div>
+      </div>
+      <hr>
+      <p>г. Минск ул.<br> Геологическая 115</p>
+    </div>
+</div>
+<div class="px-4 pt-2 pb-5">
+Чат-бот – это специальная программа, призванная автоматизировать коммуникативные процессы между клиентом и исполнителем. Правильно разработанный бот отлично справляется с решением возникающих вопросов и полностью имитирует живое общение. Основная задача программы – взаимодействие с клиентом и поиск решений в круглосуточном режиме. <br>
+Компания «Chat-Bots» специализируется на индивидуальной разработке чат-ботов под ключ. Услуги предоставляются на договорной основе. Работаем с физическими и юридическими лицами. Создаем программы, оптимизированные под конкретный бизнес.<br>
+Остались вопросы? Мы готовы ответить на них в телефонном режиме. Разработка ботов любой сложности.
+<br>
+</div>
+</div>
+<div>  
+
+</div>
 <div class="bg-dark py-3">
   <div class="contacts w-100 d-flex justify-content-end align-items-center gap-4">
     <span class="text-white link"><a class="text-white text-decoration-none" href="tel:+375 29 747 6987">+375 29 747 6987</a></span>
